@@ -26,3 +26,6 @@ export GUEST_NAME=controller-1; sudo virt-install \
 sudo systemctl enable serial-getty@ttyS0.service
 sudo systemctl start serial-getty@ttyS0.service
 ```
+
+### CSSH alternative
+https://github.com/dennishafemann/tmux-cssh
