@@ -19,3 +19,10 @@ sudo virt-install \
 --extra-args 'console=ttyS0,115200n8 serial' \
 --initrd-inject=/home/diversario/os_preseed/preseed.cfg
 ```
+
+### Enable console
+
+```shell
+sudo systemctl enable serial-getty@ttyS0.service
+sudo systemctl start serial-getty@ttyS0.service
+```
